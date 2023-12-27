@@ -1,0 +1,19 @@
+package in.sudha.streamapi;
+class Test{
+	String name;
+	String country;
+	int age;
+	
+	
+}
+
+
+
+public class GroupByDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package in.sudha.number;
+
+import java.util.Scanner;
+
+public class SquareRoot {
+
+
+    public static int squareRoot(int number) {
+	int temp;
+
+	int sr = number / 2;
+
+	do {
+		temp = sr;
+		sr = (temp + (number / temp)) / 2;
+	} while ((temp - sr) != 0);
+
+	return (int) sr;
+    }
+
+    public static void main(String[] args)  
+    { 
+	System.out.print("Enter any number:");
+	Scanner scanner = new Scanner(System.in);
+	int num = scanner.nextInt(); 
+	scanner.close();
+
+	System.out.println("Square root of "+ num+ " is: "+squareRoot(num));
+    } 
+}

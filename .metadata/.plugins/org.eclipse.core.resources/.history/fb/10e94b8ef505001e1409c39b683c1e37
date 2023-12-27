@@ -1,0 +1,15 @@
+package in.sudha.streamapi;
+
+import java.util.stream.Stream;
+
+public class FirstDemo {
+
+	public static void main(String[] args) {
+
+		//approach-I
+		Stream<Integer> stream  = Stream.of(1,2,3,4,5);
+		System.out.println(stream.count());
+		
+	}
+
+}

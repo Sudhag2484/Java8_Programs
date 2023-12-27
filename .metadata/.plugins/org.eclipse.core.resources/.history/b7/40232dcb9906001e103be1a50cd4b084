@@ -1,0 +1,29 @@
+package in.sudha.streamapi;
+class Test{
+	String name;
+	String country;
+	int age;
+	public Test(String name, String country, int age) {
+		super();
+		this.name = name;
+		this.country = country;
+		this.age = age;
+	}
+	
+}
+
+
+
+public class GroupByDemo {
+
+	public static void main(String[] args) {
+ 
+		Test t1 = new Test("Ram","India",24);
+		Test t2 = new Test("Ram","India",24);
+		Test t3 = new Test("Ram","India",24);
+		Test t4 = new Test("Ram","India",24);
+		Test t5 = new Test("Ram","India",24);
+		
+	}
+
+}

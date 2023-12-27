@@ -1,0 +1,16 @@
+package in.sudha.string;
+
+public class PrintParticularWord {
+	
+	public static void main(String[] args) {
+	char ch[] = {'S','O','F','T','W','A','R','E','T','E','S','T','I','N','G','B','L','O','G'};
+	String str="Softwaretestingblog";
+	
+    String chStr = String.copyValueOf(ch);
+    System.out.println(chStr);
+    String subStr = String.copyValueOf(ch,8,7);
+    System.out.println(subStr);
+}
+
+}
+

@@ -1,0 +1,38 @@
+package in.sudha.array;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+
+public class SortArrayByFrequency {
+
+	public static void main(String[] args) {
+
+		int [] input= {12,1,3,12,1,1,1,2,2,3,33,2,2,2};
+		
+		int[] output = sortByFre(input);
+		System.out.println(Arrays.toString(output));
+	}
+
+	private static int[] sortByFre(int[] input) {
+		
+		   HashMap<Integer, Integer> freqMap = new HashMap<>();
+		   for(int num:input) {
+			   freqMap.put(num, freqMap.getOrDefault(num, 0)+1);
+		   }
+		 Comparator<Integer>  freqComparator=(num1,num2)->{
+			int frq1= freqMap.get(num1);
+			int frq2= freqMap.get(num2);
+			
+			if(frq1==frq2) {
+				return Integer.compare(num1, num2);
+			}
+			return Integer.compare(frq1, frq2);
+
+		   };
+		 Arrays.sort(input,freqComparator);
+		return input;
+		
+	}
+
+}

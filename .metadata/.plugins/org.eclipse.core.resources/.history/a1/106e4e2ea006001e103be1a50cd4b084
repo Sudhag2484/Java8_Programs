@@ -1,0 +1,10 @@
+package in.sudha.streamapi;
+
+public class ParallelDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
